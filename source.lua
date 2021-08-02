@@ -1,0 +1,25 @@
+if _G.Enabled == true then
+    for i,v in pairs(game.Workspace.Spawn:GetChildren()) do
+        if v.Name == "Ground" then wait() else v:Destroy() end
+    end
+	local plr = game.Players.LocalPlayer
+	local char = plr.Character
+	local hum = char.Humanoid
+	messagebox("Equip the pop it you want to use!", "Equip Your Pop It", 0)
+	local PopIt = plr.PlayerGui:WaitForChild("PopIt")
+	hum.WalkSpeed = 50
+    while true do
+    	wait()
+    	local Area = game.Workspace:WaitForChild("FidgetArea")
+    	local pos = Area.Position
+    	hum:MoveTo(pos)
+       	for i,v in pairs(PopIt.Frame.Frame.Frame.Pops:GetChildren()) do
+    		absposx = v.AbsolutePosition.x + 15
+    		absposy = v.AbsolutePosition.y + 75
+    		mousemoveabs(absposx, absposy)
+    		wait(0.25)
+    		mouse1click()
+    		wait(0.25)
+       	end
+	end
+end
