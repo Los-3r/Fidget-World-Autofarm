@@ -7,19 +7,19 @@ if _G.Enabled == true then
 	local PopIt = plr.PlayerGui:WaitForChild("PopIt")
 	messagebox("Hover your mouse over the top left pop.", "Hover Over Top Left Pop", 0)
 	local Area = game.Workspace:WaitForChild("FidgetArea")
-    local pos = Area.Position
-	retr = true
+    	local pos = Area.Position
+	local thingy = true
 	hum.WalkSpeed = 75
 	hum:MoveTo(pos)
 	wait(15)
     while true do
     	wait()
-	if retr == false do
+	if thingy == false do
     		local Area = game.Workspace:WaitForChild("FidgetArea")
     		local pos = Area.Position
 		hum:MoveTo(pos)
     		wait(6)
-	eles retr = false end
+	eles thingy = false end
        	for i,v in pairs(PopIt.Frame.Frame.Frame.Pops:GetChildren()) do
     		absposx = v.AbsolutePosition.x + 25
     		absposy = v.AbsolutePosition.y + 75
