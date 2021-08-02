@@ -17,17 +17,17 @@ if _G.Enabled == true then
 	if retr == false do
     		local Area = game.Workspace:WaitForChild("FidgetArea")
     		local pos = Area.Position
+		hum:MoveTo(pos)
+    		wait(6)
 	eles retr = false end
-    	hum:MoveTo(pos)
-    	wait(7.5)
        	for i,v in pairs(PopIt.Frame.Frame.Frame.Pops:GetChildren()) do
-    		absposx = v.AbsolutePosition.x + 15
+    		absposx = v.AbsolutePosition.x + 25
     		absposy = v.AbsolutePosition.y + 75
     		mousemoveabs(absposx, absposy)
-    		wait(0.1)
+    		wait(0.15)
     		mouse1click()
-    		wait(0.1)
+    		wait(0.15)
        	end
-       	wait(7.5)
+       	wait(6)
 	end
 end
