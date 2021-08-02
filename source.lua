@@ -1,7 +1,5 @@
 if _G.Enabled == true then
-    for i,v in pairs(game.Workspace.Spawn:GetChildren()) do
-        if v.Name == "Ground" then wait() else v:Destroy() end
-    end
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/Los-3r/Fidget-World-Autofarm/main/noclip.lua"),true))()
 	local plr = game.Players.LocalPlayer
 	local char = plr.Character
 	local hum = char.Humanoid
