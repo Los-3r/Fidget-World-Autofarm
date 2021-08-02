@@ -5,12 +5,18 @@ if _G.Enabled == true then
 	local hum = char.Humanoid
 	messagebox("Equip the pop it you want to use!", "Equip Your Pop It", 0)
 	local PopIt = plr.PlayerGui:WaitForChild("PopIt")
-	hum.WalkSpeed = 50
+	messagebox("Hover your mouse over the top left pop.", "Hover Over Top Left Pop", 0)
+	local Area = game.Workspace:WaitForChild("FidgetArea")
+    local pos = Area.Position
+	hum.WalkSpeed = 75
+	hum:MoveTo(pos)
+	wait(15)
     while true do
     	wait()
     	local Area = game.Workspace:WaitForChild("FidgetArea")
     	local pos = Area.Position
     	hum:MoveTo(pos)
+    	wait(7.5)
        	for i,v in pairs(PopIt.Frame.Frame.Frame.Pops:GetChildren()) do
     		absposx = v.AbsolutePosition.x + 15
     		absposy = v.AbsolutePosition.y + 75
@@ -19,5 +25,6 @@ if _G.Enabled == true then
     		mouse1click()
     		wait(0.25)
        	end
+       	wait(7.5)
 	end
 end
