@@ -21,9 +21,9 @@ if _G.Enabled == true then
     		absposx = v.AbsolutePosition.x + 15
     		absposy = v.AbsolutePosition.y + 75
     		mousemoveabs(absposx, absposy)
-    		wait(0.25)
+    		wait(0.025)
     		mouse1click()
-    		wait(0.25)
+    		wait(0.025)
        	end
        	wait(7.5)
 	end
