@@ -8,7 +8,7 @@ if _G.Enabled == true then
 	messagebox("Hover your mouse over the top left pop.", "Hover Over Top Left Pop", 0)
 	local Area = game.Workspace:WaitForChild("FidgetArea")
     local pos = Area.Position
-	local retr = true
+	retr = true
 	hum.WalkSpeed = 75
 	hum:MoveTo(pos)
 	wait(15)
